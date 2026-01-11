@@ -744,15 +744,8 @@ safe_on_render_menu(function()
     end
 
     local equipped_spells = safe_get_equipped_spell_ids()
-    table.insert(equipped_spells, spell_data.evade.spell_id) -- add evade to the list
-    table.insert(equipped_spells, spell_data.death_trap.spell_id) -- force death_trap as equipped
-    table.insert(equipped_spells, spell_data.concealment.spell_id) -- force concealment as equipped
-    table.insert(equipped_spells, spell_data.shadow_step.spell_id) -- force shadow_step as equipped
-    table.insert(equipped_spells, spell_data.shadow_imbuement.spell_id) -- force shadow_imbuement as equipped
-    table.insert(equipped_spells, spell_data.dance_of_knives.spell_id) -- force dance_of_knives as equipped
-    table.insert(equipped_spells, spell_data.poison_imbuement.spell_id) -- force poison_imbuement as equipped
-    table.insert(equipped_spells, spell_data.poison_trap.spell_id) -- force poison_trap as equipped
-    table.insert(equipped_spells, spell_data.smoke_grenade.spell_id) -- force smoke_grenade as equipped
+    table.insert(equipped_spells, spell_data.evade.spell_id) -- add evade (always available, not on skill bar)
+    table.insert(equipped_spells, spell_data.dash.spell_id) -- add dash (always available, not on skill bar)
 
     -- Create a lookup table for equipped spells
     local equipped_lookup = {}
