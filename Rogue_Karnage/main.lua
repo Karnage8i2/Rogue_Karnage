@@ -745,7 +745,6 @@ safe_on_render_menu(function()
 
     local equipped_spells = safe_get_equipped_spell_ids()
     table.insert(equipped_spells, spell_data.evade.spell_id) -- add evade (always available, not on skill bar)
-    table.insert(equipped_spells, spell_data.dash.spell_id) -- add dash (always available, not on skill bar)
 
     -- Create a lookup table for equipped spells
     local equipped_lookup = {}
