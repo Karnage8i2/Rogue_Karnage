@@ -8,6 +8,7 @@ local spell_priority = {
     "concealment",
     "shadow_imbuement",
     "death_trap",
+    "smoke_grenade",
     "poison_trap",
     "caltrop",
     "shadow_step",
