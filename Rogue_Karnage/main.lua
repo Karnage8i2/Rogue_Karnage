@@ -62,6 +62,7 @@ local function get_active_spell_priority(player_position)
                 "concealment",       -- quick stealth setup
                 "shadow_imbuement",  -- amplify traps
                 "death_trap",        -- primary AOE nuke
+                "smoke_grenade",     -- damage amplification
                 "poison_trap",       -- layered AOE damage
                 "caltrop",           -- vulnerable/control
                 "shadow_step",       -- mobility
@@ -76,6 +77,7 @@ local function get_active_spell_priority(player_position)
                 "concealment",       -- stealth burst window
                 "shadow_imbuement",  -- amplify trap damage
                 "death_trap",        -- primary nuke
+                "smoke_grenade",     -- damage amplification
                 "poison_trap",       -- sustained damage
                 "caltrop",           -- vulnerable setup
                 "shadow_step",       -- engage
@@ -239,6 +241,7 @@ local function get_active_spell_priority(player_position)
         "concealment",
         "shadow_imbuement",
         "death_trap",
+        "smoke_grenade",
         "poison_trap",
         "caltrop",
         "shadow_step",
@@ -749,6 +752,7 @@ safe_on_render_menu(function()
     table.insert(equipped_spells, spell_data.dance_of_knives.spell_id) -- force dance_of_knives as equipped
     table.insert(equipped_spells, spell_data.poison_imbuement.spell_id) -- force poison_imbuement as equipped
     table.insert(equipped_spells, spell_data.poison_trap.spell_id) -- force poison_trap as equipped
+    table.insert(equipped_spells, spell_data.smoke_grenade.spell_id) -- force smoke_grenade as equipped
 
     -- Create a lookup table for equipped spells
     local equipped_lookup = {}
