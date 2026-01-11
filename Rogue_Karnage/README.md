@@ -29,6 +29,7 @@ Each profile includes three rotation modes:
 - Quick stealth setup with Concealment
 - Shadow Imbuement to amplify traps
 - Death Trap as primary nuke
+- Smoke Grenade for damage amplification
 - Layered Poison Trap for sustained AOE
 - Caltrop for vulnerable/control
 
@@ -37,6 +38,7 @@ Each profile includes three rotation modes:
 - Concealment for burst window
 - Shadow Imbuement to amplify damage
 - Death Trap on priority targets
+- Smoke Grenade for damage amplification
 - Poison Trap for sustained damage
 
 #### 2. Dance of Knives Build
